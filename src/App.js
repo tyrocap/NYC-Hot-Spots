@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card'
+
 
 function App() {
   return (
@@ -17,18 +19,12 @@ function App() {
       <body>
         <div className="g-map">
           <div className="g-map-header">
-            <div></div>
             <div className="filter-box">
-              <div className="drop-down-buttons">
-                <div className="dropdown">
-                  <button className="">NYC</button>
-                  <div></div>
-                </div>
-              </div>
-              <p>on a </p>
-              <div className="drop-down-buttons"></div>
-              <p>around </p>
-              <div className="drop-down-buttons"></div>
+              <Card></Card>
+              <p className="normal-font">on a </p>
+              <Card></Card>
+              <p className="normal-font">around </p>
+              <Card></Card>
             </div>
             <div></div>
           </div>

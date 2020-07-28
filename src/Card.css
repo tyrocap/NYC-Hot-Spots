@@ -1,0 +1,11 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
