@@ -44,19 +44,19 @@ class Card extends Component {
     const text = this.state.buttonText;
     return (
       <div className="card">
-        <button className="btn normal-font" onClick={this.toggleMenu}>
-          {text}
+        <button className="btn-flex backg-tr color-white normal-font" onClick={this.toggleMenu}>
+          {text}<span>&#9660;</span>
         </button>
         {
           this.state.showMenu
           ? (
               <div className="dropdown-menu">
-                <button className="btn normal-font" value="Chinatown" onClick={this.wrapperFuntion}>Chinatown</button>
-                <button className="btn normal-font" value="Chelsea" onClick={this.wrapperFuntion}>Chelsea</button>
-                <button className="btn normal-font" value="Downtown" onClick={this.wrapperFuntion}>Downtown</button>
-                <button className="btn normal-font" value="Uptown" onClick={this.wrapperFuntion}>Uptown</button>
-                <button className="btn normal-font" value="Midtown" onClick={this.wrapperFuntion}>Midtown</button>
-                <button className="btn normal-font" value="Harlem" onClick={this.wrapperFuntion}>Harlem</button>
+                <button className="btn backg-tr normal-font" value="Chinatown" onClick={this.wrapperFuntion}>Chinatown</button>
+                <button className="btn backg-tr normal-font" value="Chelsea" onClick={this.wrapperFuntion}>Chelsea</button>
+                <button className="btn backg-tr normal-font" value="Downtown" onClick={this.wrapperFuntion}>Downtown</button>
+                <button className="btn backg-tr normal-font" value="Uptown" onClick={this.wrapperFuntion}>Uptown</button>
+                <button className="btn backg-tr normal-font" value="Midtown" onClick={this.wrapperFuntion}>Midtown</button>
+                <button className="btn backg-tr normal-font" value="Harlem" onClick={this.wrapperFuntion}>Harlem</button>
               </div>
             )
             : (

@@ -21,9 +21,9 @@ function App() {
           <div className="g-map-header">
             <div className="filter-box">
               <Card></Card>
-              <p className="normal-font">on a </p>
+              <p className="normal-font"><pre className="pre-text color-white">on a</pre></p>
               <Card></Card>
-              <p className="normal-font">around </p>
+              <p className="normal-font"><pre className="pre-text color-white">around</pre></p>
               <Card></Card>
             </div>
             <div></div>
