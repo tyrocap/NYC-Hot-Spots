@@ -20,11 +20,11 @@ function App() {
         <div className="g-map">
           <div className="g-map-header">
             <div className="filter-box">
-              <Card></Card>
+              <Card buttonText="Chinatown" itemCount="5" itemsTexts={['Chinatown','Chelsea','Downtown','Uptown','Midtown','Harlem']}></Card>
               <p className="normal-font"><pre className="pre-text color-white">on a</pre></p>
-              <Card></Card>
+              <Card buttonText="Saturday" itemCount="5" itemsTexts={['Saturday','Friday','Thursday','Wednesday','Tuesday','Monday']}></Card>
               <p className="normal-font"><pre className="pre-text color-white">around</pre></p>
-              <Card></Card>
+              <Card buttonText="12PM" itemCount="8" itemsTexts={['6PM','7PM','8PM','9PM','10PM','11PM','12AM','1AM','2AM']}></Card>
             </div>
             <div></div>
           </div>

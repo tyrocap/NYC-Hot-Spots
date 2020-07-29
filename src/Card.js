@@ -3,12 +3,12 @@ import './Card.css';
 
 
 class Card extends Component {
-  constructor() {
-    super ();
+  constructor(props) {
+    super (props);
 
     this.state = {
       showMenu: false,
-      buttonText: 'Chinatown',
+      buttonText: this.props.buttonText,
     }
 
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -42,6 +42,11 @@ class Card extends Component {
 
   render() {
     const text = this.state.buttonText;
+    const buttons = [];
+    for (let i=0; i<this.props.itemCount; i++) {
+      let btnText = this.props.itemsTexts[i];
+      buttons.push(<button className="btn backg-tr normal-font" value={btnText} onClick={this.wrapperFuntion}>{btnText}</button>)
+    }
     return (
       <div className="card">
         <button className="btn-flex backg-tr color-white normal-font" onClick={this.toggleMenu}>
@@ -51,12 +56,7 @@ class Card extends Component {
           this.state.showMenu
           ? (
               <div className="dropdown-menu">
-                <button className="btn backg-tr normal-font" value="Chinatown" onClick={this.wrapperFuntion}>Chinatown</button>
-                <button className="btn backg-tr normal-font" value="Chelsea" onClick={this.wrapperFuntion}>Chelsea</button>
-                <button className="btn backg-tr normal-font" value="Downtown" onClick={this.wrapperFuntion}>Downtown</button>
-                <button className="btn backg-tr normal-font" value="Uptown" onClick={this.wrapperFuntion}>Uptown</button>
-                <button className="btn backg-tr normal-font" value="Midtown" onClick={this.wrapperFuntion}>Midtown</button>
-                <button className="btn backg-tr normal-font" value="Harlem" onClick={this.wrapperFuntion}>Harlem</button>
+                {buttons}
               </div>
             )
             : (
