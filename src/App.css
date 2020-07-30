@@ -1,4 +1,11 @@
 /* GENERAL */
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+}
+
 /* BUTTONS */
 .btn {
   height: 40px;
@@ -106,6 +113,7 @@
 
 .g-map-header {
   display: inline-flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   position: absolute;
@@ -140,4 +148,86 @@
 
 .pre-text {
   margin: 0;
+}
+
+
+.g-map-header-slider {
+  display: inline-flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  min-height: 7vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto 0 auto;
+  top: 80px;
+  right: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.slider-ticks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /*left: 35px;*/
+  /*right: 20px;*/
+}
+
+
+
+.g-map-sidebar {
+  position: absolute;
+  width: 15%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 100px;
+  left: 25px;
+}
+
+.g-map-sidebar-content {
+  margin: 0;
+  padding: 0;
+}
+
+.area-container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+
+.area-container-content-uplayer {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  /*justify-content: space-evenly;*/
+
+}
+
+.accu-numbers {
+  margin: 0 0 0 2vh;
+  flex-basis: 10%;
+  padding: 0;
+}
+
+.accu-name {
+  margin: 0;
+  flex-basis: 60%;
+}
+
+.accu-score {
+  margin: 0;
+  flex-basis: 20%;
+}
+
+.area-container-content-downlayer {
+  margin: 0 0 0 5vh;
+  text-align: left;
+}
+
+.accd-paragraph {
+  margin: 0 0 1vh 0;
 }
