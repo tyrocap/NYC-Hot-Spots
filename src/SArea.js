@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import SRest from './SRest'
+
 
 class SArea extends Component {
   constructor(props) {
@@ -25,8 +27,14 @@ class SArea extends Component {
   }
 
   render() {
-    let areaName = this.props.areaName;
-    let areaScore = this.props.areaScore;
+    const areaName = this.props.areaName;
+    const areaScore = this.props.areaScore;
+    const restArray = [];
+    restArray.push(
+      <SRest restName="Maroccan Bay" restScore="59" restType="restaurant"/>,
+      <SRest restName="Uzbek Bay" restScore="48" restType="restaurant"/>,
+      <SRest restName="Mexican Bay" restScore="75" restType="restaurant"/>,
+    )
     return (
       <div className="area-container">
         <div className="area-container-header color-white" onClick={this.toggleContent}>
@@ -41,16 +49,7 @@ class SArea extends Component {
         {
           this.state.showContent
           ? (
-              <div className="area-container-content color-white">
-                <div className="area-container-content-uplayer normal-font">
-                  <p className="accu-numbers">1.</p>
-                  <p className="accu-name">restName</p>
-                  <p className="accu-score">60%</p>
-                </div>
-                <div className="area-container-content-downlayer">
-                  <p className="accd-paragraph">restType</p>
-                </div>
-              </div>
+            restArray.map(rest => <div>{rest}</div>)
             ) : null
         }
       </div>
