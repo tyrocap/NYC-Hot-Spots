@@ -9,9 +9,9 @@ export function Handle({
   return (
     <div
       style={{
-        left: `${percent}%`,
+        left: 0,
         position: 'absolute',
-        marginLeft: 25,
+        marginLeft: -7.5,
         marginTop: 30,
         zIndex: 99,
         width: 15,

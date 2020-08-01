@@ -20,15 +20,14 @@ function Tick({ tick, count }) {
         style={{
           // position: 'absolute',
           marginRight: 20,
-          // marginLeft: 20,
           marginTop: 50,
           fontSize: 15,
           textAlign: 'center',
-          marginLeft: `${-(90 / count) * 2}%`,
-          width: `${90 / count}%`,
+          marginLeft: `${-(100 / count) * 2}%`,
+          width: `${100 / count}%`,
           color: "white",
-          // left: `${tick.percent}%`,
-          left: 10,
+          left: `${tick.percent}%`,
+          // left: 10,
         }}
       >
         {tick.value}
