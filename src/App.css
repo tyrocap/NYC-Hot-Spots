@@ -125,6 +125,7 @@ hr {
   right: 0;
   left: 0;
   border-radius: 5px;
+  z-index: 99;
 }
 
 
@@ -143,6 +144,7 @@ hr {
 .dropdown-menu {
   display: none;
   flex-direction: column;
+  z-index: 100;
 
 }
 
@@ -165,6 +167,7 @@ hr {
   right: 0;
   left: 0;
   border-radius: 5px;
+  z-index: 99;
 }
 
 .slider-ticks {
@@ -184,6 +187,8 @@ hr {
   background: rgba(0, 0, 0, 0.7);
   top: 100px;
   left: 25px;
+  overflow: scroll;
+  z-index: 99;
 }
 
 .g-map-sidebar-content {
@@ -230,4 +235,10 @@ hr {
 
 .accd-paragraph {
   margin: 0 0 1vh 0;
+}
+
+
+.google-maps {
+  position: relative;
+  /*z-index: 100;*/
 }

@@ -4,7 +4,7 @@ import './App.css';
 import Card from './Card'
 import Slider from './Sslider'
 import SArea from "./SArea";
-
+import MyMapComponent from "./Maps"
 
 function App() {
   return (
@@ -34,13 +34,36 @@ function App() {
           </div>
           <div className="g-map-sidebar">
             <ul className="g-map-sidebar-content">
-              <SArea areaName="Chinatown" areaScore="90"></SArea>
+              <SArea areaName="Chinatown" key={"0"} areaScore="90"></SArea>
               <hr />
-              <SArea areaName="Chelsea" areaScore="70"></SArea>
+              <SArea areaName="Chelsea" key={"1"} areaScore="70"></SArea>
+              <hr />
+              <SArea key={"2"} areaName="Town" areaScore="60"></SArea>
+              <hr />
+              <SArea areaName="Sea" key={"3"} areaScore="50"></SArea>
+              <hr />
+              <SArea areaName="Chinatown" key={"4"} areaScore="90"></SArea>
+              <hr />
+              <SArea areaName="Chelsea" key={"5"} areaScore="70"></SArea>
+              <hr />
+              <SArea areaName="Town" key={"6"} areaScore="60"></SArea>
+              <hr />
+              <SArea areaName="Sea" key={"7"} areaScore="50"></SArea>
+              <hr />
+              <SArea areaName="Town" key={"8"} areaScore="60"></SArea>
+              <hr />
+              <SArea areaName="Sea" key={"9"} areaScore="50"></SArea>
               <hr />
             </ul>
           </div>
-          <div className="google-maps"></div>
+          <div className="google-maps">
+            <MyMapComponent
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO81s5Y-5mT2keHrigJ5XotMZc8otwYG4&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+            />
+          </div>
           <div className="google-maps-content"></div>
         </div>
       </body>
